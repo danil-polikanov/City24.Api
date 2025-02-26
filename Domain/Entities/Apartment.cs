@@ -14,7 +14,7 @@ namespace City24.Api.Domain.Entities
         public int Floor { get; set; }
         public int TotalFloors { get; set; }
         public double Area { get; set; }
-        public int Balcony { get; set; }
+        public string? Balcony { get; set; }
         public string Ownership { get; set; }
         public int AddressId { get; set; }
         public Address Address { get; set; }
@@ -22,6 +22,8 @@ namespace City24.Api.Domain.Entities
         public Owner Owner { get; set; }
         public int PriceId {  get; set; }
         public Price Price { get; set; }
+        public int CommunicationId {  get; set; }
+        public Communications Communications {  get; set; }
         public List<Photo> Photos { get; set; } = new List<Photo>();
         public List<SecuritySystem> SecuritySystems { get; set; } = new List<SecuritySystem>();
         public List<Feature> Features { get; set; } = new List<Feature>();
